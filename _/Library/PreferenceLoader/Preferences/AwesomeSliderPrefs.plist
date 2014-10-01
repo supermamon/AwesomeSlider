@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = AwesomeSliderPrefs;
+	cell = PSLinkCell;
+	detail = AwesomeSliderPrefsListController;
+	icon = AwesomeSliderPrefs.png;
+	isController = 1;
+	label = AwesomeSlider;
+    };
+}

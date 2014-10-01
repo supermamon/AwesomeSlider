@@ -1,0 +1,10 @@
+Package: com.supermamon.awesomeslider
+Name: AwesomeSlider
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Slide to Awesomeness!
+Maintainer: Raymond M. Velasquez
+Author: Raymond M. Velasquez
+Section: Tweaks
+Version: 0.0.3-5
+Installed-Size: 96

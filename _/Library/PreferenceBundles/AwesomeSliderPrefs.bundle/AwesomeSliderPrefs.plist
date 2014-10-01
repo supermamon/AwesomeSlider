@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>				<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>cell</key>				<string>PSSwitchCell</string>
+			<key>default</key>			<true/>
+			<key>defaults</key>			<string>com.supermamon.awesomesliderprefs</string>
+			<key>key</key>				<string>ASisEnabled</string>
+			<key>label</key>			<string>Enabled</string>
+			<key>PostNotification</key>	<string>com.supermamon.awesomesliderprefs/settingschanged</string>
+		</dict>
+        <dict>
+            <key>cell</key>             <string>PSEditTextCell</string>
+            <key>defaults</key>         <string>com.supermamon.awesomesliderprefs</string>
+            <key>key</key>              <string>AStext</string>
+            <key>label</key>            <string>Text</string>
+            <key>PostNotification</key> <string>com.supermamon.awesomesliderprefs/settingschanged</string>
+        </dict>		
+	</array>
+	<key>title</key>				
+	<string>AwesomeSlider</string>
+</dict>
+</plist>

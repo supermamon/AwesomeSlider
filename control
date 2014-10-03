@@ -1,7 +1,7 @@
 Package: com.supermamon.awesomeslider
 Name: AwesomeSlider
 Depends: mobilesubstrate
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: Change the "slide to unlock" label.
 Maintainer: Raymond M. Velasquez

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>title</key>				
+	<string>AwesomeSlider</string>
 	<key>items</key>
 	<array>
 		<dict>
@@ -11,8 +13,16 @@
 			<key>cell</key>				<string>PSSwitchCell</string>
 			<key>default</key>			<true/>
 			<key>defaults</key>			<string>com.supermamon.awesomesliderprefs</string>
+			<key>key</key>				<string>ASshowChevron</string>
+			<key>label</key>			<string>Show Chevron</string>
+			<key>PostNotification</key>	<string>com.supermamon.awesomesliderprefs/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>				<string>PSSwitchCell</string>
+			<key>default</key>			<true/>
+			<key>defaults</key>			<string>com.supermamon.awesomesliderprefs</string>
 			<key>key</key>				<string>ASisEnabled</string>
-			<key>label</key>			<string>Enabled</string>
+			<key>label</key>			<string>Custom Text</string>
 			<key>PostNotification</key>	<string>com.supermamon.awesomesliderprefs/settingschanged</string>
 		</dict>
         <dict>
@@ -22,8 +32,30 @@
             <key>label</key>            <string>Text</string>
             <key>PostNotification</key> <string>com.supermamon.awesomesliderprefs/settingschanged</string>
         </dict>		
+		<dict>
+			<key>cell</key>             <string>PSGroupCell</string>
+		    <key>label</key>			<string>Show some love!</string>
+			<key>footerAlignment</key>	<integer>1</integer>
+			<key>footerText</key>		<string>© 2014 Raymond M. Velasquez</string>
+		</dict>
+		<dict>
+			<key>cell</key>				<string>PSButtonCell</string>
+			<key>icon</key>				<string>web@2x.png</string>
+			<key>label</key>			<string>www.supermamon.com</string>
+			<key>action</key>			<string>open_www</string>
+		</dict>		
+		<dict>
+			<key>cell</key>				<string>PSButtonCell</string>
+			<key>icon</key>				<string>twitter@2x.png</string>
+			<key>label</key>			<string>@supermamon</string>
+			<key>action</key>			<string>open_twitter</string>
+		</dict>		
+		<dict>
+			<key>cell</key>				<string>PSButtonCell</string>
+			<key>icon</key>				<string>PayPal@2x.png</string>
+			<key>label</key>			<string>Paypal</string>
+			<key>action</key>			<string>donate</string>
+		</dict>		
 	</array>
-	<key>title</key>				
-	<string>AwesomeSlider</string>
 </dict>
 </plist>

@@ -11,25 +11,34 @@
 		</dict>
 		<dict>
 			<key>cell</key>				<string>PSSwitchCell</string>
-			<key>default</key>			<true/>
 			<key>defaults</key>			<string>com.supermamon.awesomesliderprefs</string>
-			<key>key</key>				<string>ASshowChevron</string>
-			<key>label</key>			<string>Show Chevron</string>
+			<key>key</key>				<string>bHideChevron</string>
+			<key>default</key>			<false/>
+			<key>label</key>			<string>Hide Chevron</string>
 			<key>PostNotification</key>	<string>com.supermamon.awesomesliderprefs/settingschanged</string>
 		</dict>
 		<dict>
 			<key>cell</key>				<string>PSSwitchCell</string>
-			<key>default</key>			<true/>
 			<key>defaults</key>			<string>com.supermamon.awesomesliderprefs</string>
-			<key>key</key>				<string>ASisEnabled</string>
-			<key>label</key>			<string>Custom Text</string>
+			<key>key</key>				<string>bHideGlint</string>
+			<key>default</key>			<false/>
+			<key>label</key>			<string>Hide Glint (not working)</string>
+			<key>PostNotification</key>	<string>com.supermamon.awesomesliderprefs/settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>				<string>PSSwitchCell</string>
+			<key>defaults</key>			<string>com.supermamon.awesomesliderprefs</string>
+			<key>key</key>				<string>bUseCustomText</string>
+			<key>default</key>			<false/>
+			<key>label</key>			<string>Use Custom Text</string>
 			<key>PostNotification</key>	<string>com.supermamon.awesomesliderprefs/settingschanged</string>
 		</dict>
         <dict>
             <key>cell</key>             <string>PSEditTextCell</string>
             <key>defaults</key>         <string>com.supermamon.awesomesliderprefs</string>
-            <key>key</key>              <string>AStext</string>
+            <key>key</key>              <string>sCustomText</string>
             <key>label</key>            <string>Text</string>
+			<key>default</key>          <string>Awesome!</string>
             <key>PostNotification</key> <string>com.supermamon.awesomesliderprefs/settingschanged</string>
         </dict>		
 		<dict>
@@ -53,9 +62,14 @@
 		<dict>
 			<key>cell</key>				<string>PSButtonCell</string>
 			<key>icon</key>				<string>PayPal@2x.png</string>
-			<key>label</key>			<string>Paypal</string>
+			<key>label</key>			<string>Send some love</string>
 			<key>action</key>			<string>donate</string>
 		</dict>		
+		<dict>
+			<key>cell</key>             <string>PSGroupCell</string>
+			<key>footerAlignment</key>	<integer>1</integer>
+			<key>footerText</key>		<string>Tested on an iPhone 5, iOS 7.1.2</string>
+		</dict>
 	</array>
 </dict>
 </plist>

@@ -1,4 +1,4 @@
 AwesomeSlider
 =============
 
-A Jailbreak tweak to change the "slide to unlock" label
+A Jailbreak tweak to customize slide to unlock.

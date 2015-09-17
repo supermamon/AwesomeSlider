@@ -1,10 +1,12 @@
 Package: com.supermamon.awesomeslider
 Name: AwesomeSlider
-Depends: mobilesubstrate
 Architecture: iphoneos-arm
-Description: Slide to Awesomeness!
-Maintainer: Raymond M. Velasquez
-Author: Raymond M. Velasquez
+Depends: mobilesubstrate
+Description: Customize the "Slide to unlock" label.
+	My first attempt at making a tweak.
+Maintainer: permamon <at.supermamon@gmail.com>
+Author: spermamon <at.supermamon@gmail.com>
 Section: Tweaks
-Version: 0.0.3-5
-Installed-Size: 96
+Depiction: https://supermamon.github.io/repo/depictions/AwesomeSlider/index.html
+Version: 1.0.0-6
+Installed-Size: 236

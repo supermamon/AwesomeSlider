@@ -38,15 +38,16 @@ static NSString* sCustomText = @"Awesome!";
 %end
 //------------------------------------------------------------------------------
 %hook SBLockScreenView
-- (void)setCustomSlideToUnlockText:(id)arg1
+- (void)setCustomSlideToUnlockText:(id)arg1 
+animated:(bool)arg2
 {
     if(bUseCustomText && sCustomText)
     {
         arg1 = sCustomText;
-		%orig(arg1);
+	%orig(arg1,arg2);
     } else {
-		%orig;
-	}
+	%orig;
+    }
 }
 %end
 //------------------------------------------------------------------------------
@@ -55,9 +56,9 @@ static void loadPrefs()
     NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.supermamon.awesomesliderprefs.plist"];
     if(prefs)
     {
-		bHideChevron   = ( [prefs objectForKey:@"bHideChevron"]   ? [[prefs objectForKey:@"bHideChevron"]   boolValue] : bHideChevron );
-		bHideGlint     = ( [prefs objectForKey:@"bHideGlint"]     ? [[prefs objectForKey:@"bHideGlint"]     boolValue] : bHideGlint );
-		bUseCustomText = ( [prefs objectForKey:@"bUseCustomText"] ? [[prefs objectForKey:@"bUseCustomText"] boolValue] : bUseCustomText );
+	bHideChevron   = ( [prefs objectForKey:@"bHideChevron"]   ? [[prefs objectForKey:@"bHideChevron"]   boolValue] : bHideChevron );
+	bHideGlint     = ( [prefs objectForKey:@"bHideGlint"]     ? [[prefs objectForKey:@"bHideGlint"]     boolValue] : bHideGlint );
+	bUseCustomText = ( [prefs objectForKey:@"bUseCustomText"] ? [[prefs objectForKey:@"bUseCustomText"] boolValue] : bUseCustomText );
         sCustomText    = ( [prefs objectForKey:@"sCustomText"]    ? [prefs objectForKey:@"sCustomText"]                : sCustomText );
         [sCustomText retain];
     }
